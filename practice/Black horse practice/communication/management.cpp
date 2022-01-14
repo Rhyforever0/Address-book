@@ -1,6 +1,35 @@
 #include<iostream>
 using namespace std;
 #include<string>
+#define MAX 1000
+
+//设计联系人结构体
+struct Person
+{
+    //name
+    string m_Name;
+    //sex  1 male   2 female
+    int m_Sex;
+    //age
+    int m_Age;
+    //tele
+    string m_Phone;
+    //address
+    string m_Addr;
+};
+
+//设计通讯录结构体
+struct Addressbooks
+{
+    //保存的的联系人数组
+    struct Person personArray[MAX];
+    
+    //通讯录中当前记录联系人个数
+    int m_Size;
+};
+
+
+
 //void showMenu
 //function:show Menu GUI
 
